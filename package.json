@@ -1,0 +1,21 @@
+{
+  "name": "ts_fog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "security.js",
+  "scripts": {
+    "start": "node -r ts-node/register index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "4.24.3",
+    "fastify-openapi-glue": "4.4.2"
+  },
+  "devDependencies": {
+    "ts-node": "10.9.1",
+    "typescript": "5.2.2"
+  }
+}
