@@ -10,7 +10,7 @@ const fastifyPluginOpenapiGlueName = 'fastify-openapi-glue';
 const yamlFileName = 'petstore-openapi.v3.yaml';
 
 const main = async () => {
-  const openapiGlue = await dynamicImport(fastifyPluginOpenapiGlueName, module) as unknown as  FastifyPluginCallback;
+  const openapiGlue: FastifyPluginCallback = await dynamicImport(fastifyPluginOpenapiGlueName, module);
   const options = {
     specification: path.join(__dirname, yamlFileName),
     serviceHandlers: new Service(),
